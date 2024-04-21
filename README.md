@@ -20,8 +20,10 @@ MALD 180B é um modelo ainda experimental, ele tem apenas a capacidade de gerar 
 # Para treinar:
 
 O modelo ainda não foi treinado como já mencionei. No entanto para treinar o modelo acreditamos nos seguintes datasets:
-* "tiiuae/falcon-refinedweb". Esse dataset contém 600 Bilhões de Tokens de qualidade.
-* "allenai/c4". C4 é um dataset baseado no Common Crawl porém é uma versão mais refinada dos dados do Common Crawl. Contem 108 idiomas e diversas informações e dados da internet como diálogos, wikipédia, artigos, noticias, códigos de programação etc. Tem várias versões, algumas com mais de 150B de tokens (totais). Recomendamos a versão: **multilingual (mC4)** que contém 108 idiomas e pesa 9TB.
-* "manu/project_gutenberg". Dataset com 70,000 livros e obras de diversos estilos e culturas.
+* "HuggingFaceFW/fineweb". Esse dataset contém 15 TRILHÕES de Tokens de alta qualidade. Modelos de IA treinados com ele tiveram uma qualidade melhor que datasets como C4, Dolma, The Pile, RefinedWeb, SlimPijama etc. Esse dataset contém vários idiomas etc.
+  
+* "allenai/c4". C4 é um dataset baseado no Common Crawl porém é uma versão mais refinada dos dados do Common Crawl. Contem 108 idiomas e diversas informações e dados da internet como diálogos, wikipédia, artigos, noticias, códigos de programação etc. Tem várias versões, algumas com mais de 150B de tokens (totais). Recomendamos a versão: **multilingual (mC4)** que contém 108 idiomas e pesa 9TB. Recomendamos essa versão para o melhorar capacidades multilinguagem do modelo pois para aprender coisas pode-se usar o **FineWeb**.
+  
+* "Anthropic/hh-rlhf".  Dataset da Anthropic que treina o modelo com reforço humano e conceitos éticos. Se você quiser um modelo de "Uncensured" ou sem limitação de geração de conteúdos, esse datasetpode não ser tão recomentado.
 
 Provavelmente esse processo usaria dezenas ou centenas de GPUs e custaria bem caro.
